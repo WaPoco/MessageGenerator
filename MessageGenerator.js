@@ -26,7 +26,6 @@ sharp(inputImagePath)
   .toBuffer({ resolveWithObject: true })
   .then(({ data, info }) => {
     const { width, height, channels } = info;
-    console.log(`Bildgröße: ${width}x${height}, Kanäle: ${channels}`);
 
     let symbolMatrix = [];
     for (let y = 0; y < height; y++) {
